@@ -7,8 +7,48 @@
     </url>
 
     <url>
-        <loc>/article/hexo-theme-huweihuang/</loc>
-        <lastmod>2020-05-12T06:26:56.566Z</lastmod>
+        <loc>/article/jvm-peruse-6/</loc>
+        <lastmod>2020-05-26T03:33:11.647Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>/article/jvm-peruse-5/</loc>
+        <lastmod>2020-05-26T03:33:05.836Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>/article/jvm-peruse-4/</loc>
+        <lastmod>2020-05-26T03:33:01.602Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>/article/jvm-peruse-3/</loc>
+        <lastmod>2020-05-26T03:32:56.292Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>/article/jvm-peruse-2/</loc>
+        <lastmod>2020-05-26T03:32:51.578Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>/article/jvm-peruse-1/</loc>
+        <lastmod>2020-05-26T03:26:58.771Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
