@@ -16,15 +16,22 @@
     </url>
 
     <url>
-        <loc>/tags/%E8%87%AA%E5%AE%9A%E4%B9%89view/</loc>
-        <lastmod>2020-06-08T01:39:04.017Z</lastmod>
+        <loc>/tags/%E8%87%AA%E5%AE%9A%E4%B9%89View/</loc>
+        <lastmod>2020-06-09T14:13:54.525Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>/tags/Android/</loc>
-        <lastmod>2020-06-08T01:39:04.017Z</lastmod>
+        <lastmod>2020-06-09T14:13:54.525Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>/tags/Algorithm/</loc>
+        <lastmod>2020-06-09T14:14:53.091Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
