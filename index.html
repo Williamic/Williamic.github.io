@@ -134,13 +134,6 @@
 
                         
                         <li>
-                            <a href="/archive/">Archives</a>
-                        </li>
-                        
-                    
-
-                        
-                        <li>
                             <a href="/about/">About</a>
                         </li>
                         
@@ -149,6 +142,13 @@
                         
                         <li>
                             <a href="/tags/">Tags</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/archive/">Archives</a>
                         </li>
                         
                     
@@ -371,7 +371,9 @@
             
         </h3>
         <div class="post-content-preview">
-            ...
+            虚拟机类加载机制
+1.类加载的过程
+   类从被加载到虚拟机内存开始，到卸载出内存为止，它的整个生命周期包括：加载（Loading）、验证（Verification）、准备（Preparation）、解析（Resolution）、初始化（Initialization）、使用（Using）和卸载（Unloading）七个阶段。其中验证、准备、解析3个部分统称为连接（Linking）。七个阶段的......
         </div>
     </a>
     
@@ -402,7 +404,12 @@
             
         </h3>
         <div class="post-content-preview">
-            ...
+            垃圾收集器与内存分配策略
+1.对象存活判定
+1）引用计数算法
+   给对象添加一个引用计数器，每当有一个地方引用它时，计数器值就加1；当引用失效时，计数器的值就减1。当计数器为0的对象就是不再被使用的。
+   引用计数算法的实现简单，判定效率也很高，但是在主流的Java虚拟机里面没有选用它来管理内存，很大原因就是无法解决对象之间的相互循环引用的问题。
+2）可达性分析算法（Reachabili......
         </div>
     </a>
     
@@ -798,7 +805,6 @@
 	<a id="rocket" href="#top" class=""></a>
 	<script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
     <script type="text/javascript" src="/js/toc.js?v=1.0.0" async=""></script>
-
 </body>
 
 </html>

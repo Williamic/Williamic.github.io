@@ -144,13 +144,6 @@
 
                         
                         <li>
-                            <a href="/archive/">Archives</a>
-                        </li>
-                        
-                    
-
-                        
-                        <li>
                             <a href="/about/">About</a>
                         </li>
                         
@@ -159,6 +152,13 @@
                         
                         <li>
                             <a href="/tags/">Tags</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/archive/">Archives</a>
                         </li>
                         
                     
@@ -290,12 +290,10 @@
 <p>   Java程序需要通过栈上的reference数据来操作堆上的具体对象，通过虚拟机来决定采用何种方式来定位、访问堆中的对象的具体位置，目前主流的访问方法有<strong>使用句柄</strong>和<strong>直接指针</strong>两种方式。</p>
 <h4 id="1使用句柄">1）使用句柄</h4>
 <p>   如果使用句柄访问，Java堆会划分出一块内存作为句柄池，reference中存储的是对象的句柄地址，而句柄中包含了对象实例数据与对象类型数据各自的具体地址信息，如下图所示。<br>
-<img src="./jvm-peruse-2_p1.jpg" alt=""><br>
-   使用句柄来访问的最大好处就是<strong>reference中存储的是稳定的句柄地址</strong>，在对象被移动（垃圾收集时移动对象）时只会改变句柄中的实例数据指针，而reference本身不需要修改。</p>
+<img src="./jvm-peruse-2_p1.png" width="75%" height="75%">   使用句柄来访问的最大好处就是<strong>reference中存储的是稳定的句柄地址</strong>，在对象被移动（垃圾收集时移动对象）时只会改变句柄中的实例数据指针，而reference本身不需要修改。</p>
 <h4 id="2直接指针">2）直接指针</h4>
 <p>   如果使用直接指针访问，Java堆对象的布局中就必须考虑如何放置访问类型数据的相关信息，而reference中存储的直接就是对象地址，如下图所示。<br>
-<img src="./jvm-peruse-2_p2.jpg" alt=""><br>
-   使用直接指针访问方式的最大好处就是<strong>速度更快</strong>，它节省了一次指针定位的时间开销，由于对象访问在Java堆中非常频繁，因此这类开销积少成多后也是一项非常可观的执行成本。</p>
+<img src="./jvm-peruse-2_p2.png" width="75%" height="75%">   使用直接指针访问方式的最大好处就是<strong>速度更快</strong>，它节省了一次指针定位的时间开销，由于对象访问在Java堆中非常频繁，因此这类开销积少成多后也是一项非常可观的执行成本。</p>
 
                 
 
@@ -609,7 +607,6 @@
 	<a id="rocket" href="#top" class=""></a>
 	<script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
     <script type="text/javascript" src="/js/toc.js?v=1.0.0" async=""></script>
-
 </body>
 
 </html>
