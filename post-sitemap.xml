@@ -7,8 +7,16 @@
     </url>
 
     <url>
+        <loc>/article/jvm-peruse-5/</loc>
+        <lastmod>2020-06-29T01:12:19.912Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>/article/jvm-peruse-4/</loc>
-        <lastmod>2020-06-28T08:01:55.639Z</lastmod>
+        <lastmod>2020-06-28T13:54:18.083Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -65,14 +73,6 @@
     <url>
         <loc>/article/jvm-peruse-6/</loc>
         <lastmod>2020-05-26T03:33:11.647Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>/article/jvm-peruse-5/</loc>
-        <lastmod>2020-05-26T03:33:05.836Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
