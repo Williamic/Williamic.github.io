@@ -7,6 +7,30 @@
     </url>
 
     <url>
+        <loc>/article/algorithm-polygonIntersection/</loc>
+        <lastmod>2020-07-06T13:09:47.849Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>/article/algorithm-polygonsIntersectionUnionAndDifference/</loc>
+        <lastmod>2020-07-04T15:32:08.195Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>/article/view-RoundCheckBox/</loc>
+        <lastmod>2020-07-04T15:15:36.850Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>/article/jvm-peruse-4/</loc>
         <lastmod>2020-07-04T14:44:30.727Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -41,30 +65,6 @@
     <url>
         <loc>/article/jvm-peruse-5/</loc>
         <lastmod>2020-06-29T01:12:19.912Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>/article/view-RoundCheckBox/</loc>
-        <lastmod>2020-06-25T07:55:39.273Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>/article/algorithm-polygonsIntersectionUnionAndDifference/</loc>
-        <lastmod>2020-06-12T09:50:25.213Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>/article/algorithm-polygonIntersection/</loc>
-        <lastmod>2020-06-09T14:14:53.091Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

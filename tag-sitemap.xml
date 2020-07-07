@@ -2,27 +2,6 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
-        <loc>/tags/Algorithm/</loc>
-        <lastmod>2020-06-12T09:50:25.213Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>/tags/%E8%87%AA%E5%AE%9A%E4%B9%89View/</loc>
-        <lastmod>2020-06-25T07:55:39.273Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>/tags/Android/</loc>
-        <lastmod>2020-06-25T07:55:39.273Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>/tags/Jvm/</loc>
         <lastmod>2020-07-04T14:44:30.727Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -32,6 +11,27 @@
     <url>
         <loc>/tags/Java/</loc>
         <lastmod>2020-07-04T14:44:30.727Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>/tags/%E8%87%AA%E5%AE%9A%E4%B9%89View/</loc>
+        <lastmod>2020-07-04T15:15:36.850Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>/tags/Android/</loc>
+        <lastmod>2020-07-04T15:15:36.850Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>/tags/Algorithm/</loc>
+        <lastmod>2020-07-06T13:09:47.849Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
