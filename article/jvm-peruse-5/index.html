@@ -144,14 +144,14 @@
 
                         
                         <li>
-                            <a href="/archive/">Archives</a>
+                            <a href="/about/">About</a>
                         </li>
                         
                     
 
                         
                         <li>
-                            <a href="/about/">About</a>
+                            <a href="/archive/">Archives</a>
                         </li>
                         
                     
@@ -215,9 +215,9 @@
                 post-container">
 
                 <h3 id="1java内存模型">1.Java内存模型</h3>
-<p>   Java内存模型的定义是为了屏蔽掉各种硬件和操作系统的内存访问差异，以实现让Java程序在各种平台下都能达到一致的内存访问效果，并且制定程序中各个变量的访问规则，即在虚拟机中将变量存储到内存和从内存中取出变量这样的底层细节。这里的变量指的是实例字段、静态字段和构成数组对象的元素，不包括局部变量和方法参数，因为后者是线程私有的。</p>
+<p>   Java内存模型的定义是为了<strong>屏蔽掉各种硬件和操作系统的内存访问差异，以实现让Java程序在各种平台下都能达到一致的内存访问效果</strong>，并且制定程序中各个变量的访问规则，即在虚拟机中将变量存储到内存和从内存中取出变量这样的底层细节。这里的变量指的是实例字段、静态字段和构成数组对象的元素，不包括局部变量和方法参数，因为后者是线程私有的。</p>
 <h4 id="1主内存和工作内存">1）主内存和工作内存</h4>
-<p>   Java内存模型规定了所有的变量都存储在主内存（Main Memory）中，每条线程还有自己的工作内存（Working Memory），线程的工作内存中保存了被该线程使用到的变量的主内存副本拷贝，线程对变量的所有操作（读取、赋值等）都必须在工作内存中进行，而不能直接读写主内存中的变量。不同的线程之间也无法直接访问对方工作内存中的变量，线程间变量值的传递均需要通过主内存来完成。线程、主内存、工作内存三者的交互关系如下图。<br>
+<p>   Java内存模型规定了所有的变量都存储在主内存（Main Memory）中，每条线程还有自己的工作内存（Working Memory），线程的工作内存中保存了被该线程使用到的变量的<strong>主内存副本拷贝</strong>，线程对变量的所有操作（读取、赋值等）都必须在工作内存中进行，而不能直接读写主内存中的变量。不同的线程之间也无法直接访问对方工作内存中的变量，线程间变量值的传递均需要通过主内存来完成。线程、主内存、工作内存三者的交互关系如下图。<br>
 <img src="./jvm-peruse-5_p1.png" width="75%" height="75%"></p>
 <h4 id="2内存间的交互操作">2）内存间的交互操作</h4>
 <p>   关于主内存与工作内存之间的具体交互协议，Java内存模型中定义了以下8种操作来完成，虚拟机实现时必须保证下面提及的每一种操作都是原子的、不可再分的（对于double、long类型的变量来说，load、store、read、write操作在某些平台上允许有例外）。</p>
@@ -388,7 +388,7 @@
                 <ul class="pager">
                     
                         <li class="previous">
-                            <a href="/article/jvm-peruse-6/" data-toggle="tooltip" data-placement="top" title="深入理解JVM—总结">&larr; Previous Post</a>
+                            <a href="/article/jvm-peruse-summary/" data-toggle="tooltip" data-placement="top" title="深入理解JVM—总结">&larr; Previous Post</a>
                         </li>
                     
                     

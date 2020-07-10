@@ -7,8 +7,32 @@
     </url>
 
     <url>
+        <loc>/article/jvm-peruse-2/</loc>
+        <lastmod>2020-07-10T07:08:05.983Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>/article/jvm-peruse-4/</loc>
+        <lastmod>2020-07-10T06:30:15.548Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>/article/jvm-peruse-5/</loc>
+        <lastmod>2020-07-10T03:30:21.479Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>/article/algorithm-polygonIntersection/</loc>
-        <lastmod>2020-07-09T14:42:12.656Z</lastmod>
+        <lastmod>2020-07-10T02:52:45.129Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -23,32 +47,8 @@
     </url>
 
     <url>
-        <loc>/article/jvm-peruse-5/</loc>
-        <lastmod>2020-07-08T08:20:40.699Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>/article/jvm-peruse-4/</loc>
-        <lastmod>2020-07-08T08:20:32.916Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>/article/jvm-peruse-3/</loc>
         <lastmod>2020-07-08T08:20:27.606Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>/article/jvm-peruse-2/</loc>
-        <lastmod>2020-07-08T08:20:19.933Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -71,7 +71,7 @@
     </url>
 
     <url>
-        <loc>/article/jvm-peruse-6/</loc>
+        <loc>/article/jvm-peruse-summary/</loc>
         <lastmod>2020-05-26T03:33:11.647Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
