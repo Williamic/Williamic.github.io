@@ -7,6 +7,14 @@
     </url>
 
     <url>
+        <loc>/article/jvm-peruse-summary/</loc>
+        <lastmod>2020-07-13T14:09:44.100Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>/article/jvm-peruse-2/</loc>
         <lastmod>2020-07-10T07:08:05.983Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -65,14 +73,6 @@
     <url>
         <loc>/article/view-RoundCheckBox/</loc>
         <lastmod>2020-07-04T15:15:36.850Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>/article/jvm-peruse-summary/</loc>
-        <lastmod>2020-05-26T03:33:11.647Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
