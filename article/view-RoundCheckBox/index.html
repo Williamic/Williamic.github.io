@@ -144,13 +144,6 @@
 
                         
                         <li>
-                            <a href="/about/">About</a>
-                        </li>
-                        
-                    
-
-                        
-                        <li>
                             <a href="/archive/">Archives</a>
                         </li>
                         
@@ -159,6 +152,13 @@
                         
                         <li>
                             <a href="/tags/">Tags</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/about/">About</a>
                         </li>
                         
                     
@@ -240,7 +240,8 @@
    接下来我们可以注意到，原生的Checkbox在变换的时候，外轮廓有一个小的缩小和放大的过程，所以我们也对自定义的Checkbox外轮廓的半径设置属性动画，将值在1.0-0.8-1.0的范围进行一次属性变化，代码如下。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"> private float mBackVal;</span><br><span class="line"></span><br><span class="line">ValueAnimator backAnimator = ValueAnimator.ofFloat(1.0f, 0.8f, 1.0f);</span><br><span class="line">backAnimator.setDuration(mStartAnimDuration);</span><br><span class="line">backAnimator.setInterpolator(new LinearInterpolator());</span><br><span class="line">backAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() &#123;</span><br><span class="line">    @Override</span><br><span class="line">    public void onAnimationUpdate(ValueAnimator valueAnimator) &#123;</span><br><span class="line">        mBackVal = (float) valueAnimator.getAnimatedValue();</span><br><span class="line">        postInvalidate();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br><span class="line">backAnimator.start();</span><br><span class="line"></span><br><span class="line">//绘制大圆</span><br><span class="line">float backRadius = ((float) Math.min(mWidth, mHeight) / 32 * 11) * mBackVal;</span><br><span class="line">mRoundPath.addCircle(mCenterPoint.x, mCenterPoint.y, backRadius, Path.Direction.CW);</span><br></pre></td></tr></table></figure>
 <p>   此时的效果如下图。<br>
-<img src="./view-RoundCheckBox_p5.gif" alt="动图2"></p>
+<img src="./view-RoundCheckBox_p5.gif" alt="动图2"><br>
+   这里可能会疑惑，为什么不直接用canvas.drawCircle方法，通过给Paint设置Stroke来画一个圆环。因为用drawCircle方法画出的圆环的大小并不是固定的，设置的线条的宽度只会使圆的外圈和内圈的间距达到线条宽度，实际的半径为外圈半径减去二分之一先线宽。<img src="./view-RoundCheckBox_p10.png" alt="动图2">   所以因为大小不固定，从而导致变换的数值不便与计算，且无法同时控制两个外圈和内圈的缩放。</p>
 <h4 id="2绘制勾">2）绘制勾</h4>
 <p>   背景绘制成功之后，接下来绘制勾。观察原生的Checkbox会发现，勾是左右两端同时进行的，而不是从左侧到右侧的顺序进行绘制。<br>
 <img src="./view-RoundCheckBox_p6.gif" alt="动图3">   所以这里需要用到两个Path来绘制，leftPath绘制左侧部分线条，rightPath绘制右侧部分线条，两个线段的夹角为45度。绘制路径这里需要确定三个点，勾的拐点，左终点和右终点，点的具体位置通过计算得到，这里就不在演算了。</p>
