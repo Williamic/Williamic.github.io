@@ -144,13 +144,6 @@
 
                         
                         <li>
-                            <a href="/archive/">Archives</a>
-                        </li>
-                        
-                    
-
-                        
-                        <li>
                             <a href="/about/">About</a>
                         </li>
                         
@@ -159,6 +152,13 @@
                         
                         <li>
                             <a href="/tags/">Tags</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/archive/">Archives</a>
                         </li>
                         
                     
@@ -219,7 +219,7 @@
 <h3 id="2实现步骤">2.实现步骤</h3>
 <p>   为了实现效果，先将原生控件进行步骤分解。主要实现分为三个部分，绘制背景、绘制勾以及绘制水波纹。</p>
 <h4 id="1绘制背景">1）绘制背景</h4>
-<p>   原生的方形Checkbox的背景是用裁剪方式来绘制的，因为当控件的布局添加了背景后会呈现出来，如下图所示。所以这里我们通过裁剪的方式绘制背景。<br>
+<p>   原生的方形Checkbox的背景是用类似裁剪方式来绘制的，因为当控件的布局添加了背景后会呈现出来，如下图所示。所以这里我们通过Path的填充方式绘制背景。<br>
 <img src="./view-RoundCheckBox_p1.jpg" alt="原生Checkbox"></p>
 <h5 id="-绘制一个圆环">- 绘制一个圆环</h5>
 <p>   这里的圆环作为控件的初始界面，通过Path方法来绘制。首先给Path设置填充方法，这里设置为EVEN_ODD，Path的填充方式有四种</p>
@@ -233,7 +233,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">private Path  mRoundPath;</span><br><span class="line">private Paint mBackPaint;</span><br><span class="line">private int   mStrokeWidth;  //圆环的宽度</span><br><span class="line">private Point mCenterPoint;  //中心点</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">mRoundPath = new Path();</span><br><span class="line">//设置填充类型</span><br><span class="line">mRoundPath.setFillType(Path.FillType.EVEN_ODD);</span><br><span class="line">//抗锯齿</span><br><span class="line">mBackPaint = new Paint(Paint.ANTI_ALIAS_FLAG);</span><br><span class="line">mBackPaint.setStyle(Paint.Style.FILL);</span><br><span class="line"></span><br><span class="line">@Override</span><br><span class="line">   protected void onLayout(boolean changed, int left, int top, int right, int bottom) &#123;</span><br><span class="line">       super.onLayout(changed, left, top, right, bottom);</span><br><span class="line">       mWidth = getMeasuredWidth();</span><br><span class="line">       mHeight = getMeasuredHeight();</span><br><span class="line"></span><br><span class="line">       mCenterPoint.x = getMeasuredWidth() / 2;</span><br><span class="line">       mCenterPoint.y = getMeasuredHeight() / 2;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">@Override</span><br><span class="line">protected void onDraw(Canvas canvas) &#123;</span><br><span class="line">    super.onDraw(canvas);</span><br><span class="line">    //刷新路径</span><br><span class="line">    mRoundPath.reset();</span><br><span class="line">    //绘制大圆</span><br><span class="line">    float backRadius = ((float) Math.min(mWidth, mHeight) / 32 * 11);</span><br><span class="line">    mRoundPath.addCircle(mCenterPoint.x, mCenterPoint.y, backRadius, Path.Direction.CW);</span><br><span class="line">    //绘制小圆</span><br><span class="line">    mStrokeWidth = mWidth / 16;</span><br><span class="line">    float roundRadius = ((float) Math.min(mWidth, mHeight) / 32 * 11 - (float) mStrokeWidth);</span><br><span class="line">    mRoundPath.addCircle(mCenterPoint.x, mCenterPoint.y, roundRadius, Path.Direction.CW);</span><br><span class="line">    //画出圆环</span><br><span class="line">    mBackPaint.setColor(mColorBack);</span><br><span class="line">    canvas.drawPath(mRoundPath, mBackPaint);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>   此时画出的圆环图是这样的。<br>
 <img src="./view-RoundCheckBox_p3.jpg" alt="圆环图"><br>
-   接下来需要把内圆的半径逐渐减少，这样被裁剪的圆环会不断内扩直到变成一个圆。这里需要用到属性动画，将内圆的半径参数作为变化值，采用线性插值器，将半径数从1-0逐渐递减，同时将颜色从mColorUnSelected（未选中时颜色）渐变到mColorSelected（选中后的颜色）代码如下。</p>
+   接下来需要把内圆的半径逐渐减少，这样被填充圆环会不断内扩直到变成一个圆。这里需要用到属性动画，将内圆的半径参数作为变化值，采用线性插值器，将半径数从1-0逐渐递减，同时将颜色从mColorUnSelected（未选中时颜色）渐变到mColorSelected（选中后的颜色）代码如下。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">ValueAnimator animator = ValueAnimator.ofFloat(1.0f, 0f);</span><br><span class="line">animator.setDuration(mStartAnimDuration / 2);</span><br><span class="line">//线性插值器</span><br><span class="line">animator.setInterpolator(new LinearInterpolator());</span><br><span class="line">animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() &#123;</span><br><span class="line">    @Override</span><br><span class="line">    public void onAnimationUpdate(ValueAnimator valueAnimator) &#123;</span><br><span class="line">        mRoundVal = (float) valueAnimator.getAnimatedValue();</span><br><span class="line">        //颜色渐变</span><br><span class="line">        mColorBack = getHsvColor(1.0f - mRoundVal, mColorUnSelected, mColorSelected);</span><br><span class="line">        postInvalidate();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br><span class="line">animator.start();</span><br><span class="line"></span><br><span class="line">@Override</span><br><span class="line">protected void onDraw(Canvas canvas) &#123;</span><br><span class="line">    super.onDraw(canvas);</span><br><span class="line">    //......省略代码</span><br><span class="line">    //绘制小圆，添加mRoundVal控制内圈缩放动画</span><br><span class="line">    float roundRadius = ((float) Math.min(mWidth, mHeight) / 32 * 11 - (float) mStrokeWidth) * mRoundVal;</span><br><span class="line">    mRoundPath.addCircle(mCenterPoint.x, mCenterPoint.y, roundRadius, Path.Direction.CW);</span><br><span class="line">    //......省略代码</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>   同样的，当从选中改为未选中时，将mRoundVal从0变到1即可，颜色渐变回去，如下图所示。<br>
 <img src="./view-RoundCheckBox_p4.gif" alt="动图1"><br>
