@@ -134,6 +134,13 @@
 
                         
                         <li>
+                            <a href="/about/">About</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
                             <a href="/tags/">Tags</a>
                         </li>
                         
@@ -142,13 +149,6 @@
                         
                         <li>
                             <a href="/archive/">Archives</a>
-                        </li>
-                        
-                    
-
-                        
-                        <li>
-                            <a href="/about/">About</a>
                         </li>
                         
                     
@@ -223,6 +223,21 @@
                     <span class="tag-text">2020</span>
                 </span>
                 <ul>
+                
+                  <!-- <li class="listing-item">
+                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                  </li> -->
+                 <li >
+                    08-02
+                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    <a href="/article/algorithm-narrowAll/" style="color: #0085a1">
+                        <span>
+                            多边形的内缩算法（一）—全边内缩或外扩
+                        </span>
+                    </a>
+                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+                </li>
                 
                   <!-- <li class="listing-item">
                   <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
@@ -375,7 +390,7 @@
 <style type="text/css">
    @media (min-width: 1200px){
    .archive {
-   margin-left: 16.66666667%;
+   margin-left: 6.66666667%;
    padding-right: 16.666667%;
    }
 }
@@ -408,7 +423,11 @@
     <div class="tags">
         
             
-            <a href="/tags/#Algorithm" title="Algorithm" rel="1">Algorithm</a>
+            <a href="/tags/#Algorithm" title="Algorithm" rel="2">Algorithm</a>
+            
+        
+            
+            <a href="/tags/#Computational Geometry" title="Computational Geometry" rel="1">Computational Geometry</a>
             
         
             
@@ -480,6 +499,10 @@
     <ul>
       
         <li>
+          <a href="/article/algorithm-narrowAll/">多边形的内缩算法（一）—全边内缩或外扩</a>
+        </li>
+      
+        <li>
           <a href="/article/algorithm-polygonIntersection/">判断两个多边形的位置关系算法</a>
         </li>
       
@@ -493,10 +516,6 @@
       
         <li>
           <a href="/article/jvm-peruse-5/">深入理解JVM—Java内存模型与线程</a>
-        </li>
-      
-        <li>
-          <a href="/article/jvm-peruse-4/">深入理解JVM—虚拟机类加载机制</a>
         </li>
       
     </ul>
@@ -517,7 +536,7 @@
         
     <h5>ARCHIVES</h5>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">May 2020</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">February 2020</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">January 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a><span class="archive-list-count">2</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/08/">August 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">May 2020</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">February 2020</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">January 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a><span class="archive-list-count">2</span></li></ul>
     </div>
 
         <hr>
