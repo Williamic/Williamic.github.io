@@ -149,14 +149,14 @@
 
                         
                         <li>
-                            <a href="/tags/">Tags</a>
+                            <a href="/archive/">Archives</a>
                         </li>
                         
                     
 
                         
                         <li>
-                            <a href="/archive/">Archives</a>
+                            <a href="/tags/">Tags</a>
                         </li>
                         
                     
@@ -220,10 +220,10 @@
 <ul>
 <li>若k &gt; 0，代表向量B在向量A的逆时针方向。</li>
 <li>若k &lt; 0，代表向量B在向量A的顺时针方向。</li>
-<li>若k = 0，代表向量B与向量A平行，但可能同向可能反向。<br>
-   假设目前有线段AB和CD，如下图所示，若AB与CD相交，则需要满足2个条件：<strong>点C和点D在AB线段的异侧</strong>，<strong>点A和点B在线段CD的异侧</strong>。这两个条件为AB与CD相交的<strong>充分必要条件</strong>。<img src="./algorithm-polygonIntersection_p1.png" alt="两线段相交">     所以利用跨立算法，设k1 = AB向量与AD向量的叉乘 ，k2 = AB向量与AC向量的叉乘，若k1<em>k2 &lt; 0（AB向量与AD向量的叉乘和AB向量与AC向量的叉乘是</em><em>异号</em>*），则证明点C和点D在AB线段的<strong>异侧</strong>。设k3 = CD向量与CA向量的叉乘，k4 = CD向量与CB向量的叉乘，若k3 * k4 &lt; 0 ，则证明A点和B点在CD线段的<strong>异侧</strong>。<br>
-   以上两个证明都成立，则代表AB线段与CD线段相交。</li>
+<li>若k = 0，代表向量B与向量A平行，但可能同向可能反向。</li>
 </ul>
+<p>   假设目前有线段AB和CD，如下图所示，若AB与CD相交，则需要满足2个条件：<strong>点C和点D在AB线段的异侧</strong>，<strong>点A和点B在线段CD的异侧</strong>。这两个条件为AB与CD相交的<strong>充分必要条件</strong>。<img src="./algorithm-polygonIntersection_p1.png" alt="两线段相交">     所以利用跨立算法，设k1 = AB向量与AD向量的叉乘 ，k2 = AB向量与AC向量的叉乘，若k1✖️k2 &lt; 0（AB向量与AD向量的叉乘和AB向量与AC向量的叉乘是<strong>异号</strong>），则证明点C和点D在AB线段的<strong>异侧</strong>。设k3 = CD向量与CA向量的叉乘，k4 = CD向量与CB向量的叉乘，若k3 * k4 &lt; 0 ，则证明A点和B点在CD线段的<strong>异侧</strong>。<br>
+   以上两个证明都成立，则代表AB线段与CD线段相交。</p>
 <h4 id="2两线段相切">2）两线段相切</h4>
 <p>   线段相切是线段相交的一种特殊情况，如下图所示。<img src="./algorithm-polygonIntersection_p2.png" alt="两线段相切">    此时AB向量与AD向量平行，AC向量在AB向量的顺时针方向，故k1<em>k2 = 0 ，k3</em>k4 &lt; 0。<br>
    同理CA向量在CD向量的逆时针方向，CB向量在CD向量的顺时针方向，故点A和点B在CD向量异侧。</p>
