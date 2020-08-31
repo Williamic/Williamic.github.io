@@ -144,14 +144,14 @@
 
                         
                         <li>
-                            <a href="/about/">About</a>
+                            <a href="/archive/">Archives</a>
                         </li>
                         
                     
 
                         
                         <li>
-                            <a href="/archive/">Archives</a>
+                            <a href="/about/">About</a>
                         </li>
                         
                     
@@ -215,7 +215,8 @@
                 post-container">
 
                 <h3 id="1前言">1.前言</h3>
-<p>   在<a href="https://williamic.github.io/article/algorithm-narrowAll/" target="_blank" rel="noopener">多边形的内缩算法（一）</a>中，介绍了全边内缩和外扩的思路和方法，但实际项目中有特定边内缩的需求（比如特定边界线外侧存在障碍物，为了安全起见需要内缩），故而在全边内缩的思路上进行改进和优化，衍生出单边内缩算法。下图是实际效果图。</p>
+<p>   在<a href="https://williamic.github.io/article/algorithm-narrowAll/" target="_blank" rel="noopener">多边形的内缩算法（一）</a>中，介绍了全边内缩和外扩的思路和方法，但实际项目中有特定边内缩的需求（比如特定边界线外侧存在障碍物，为了安全起见需要内缩），故而在全边内缩的思路上进行改进和优化，衍生出单边内缩算法。先上最终的效果图，下图的每条边界<strong>内缩距离不相等</strong>。<br>
+<img src="./algorithm-narrowSingle_p6.jpg" width="50%" height="50%"></p>
 <h3 id="2概述">2.概述</h3>
 <h4 id="1与全边内缩相比的差异">1）与全边内缩相比的差异</h4>
 <p>   对于上一篇文章中提到的全边内缩（外扩）来说，因为每条边的内缩（外扩）距离都是相同的，故而新的边界点相对于当前点的位置来说都是在特定方向上的——当前点的两邻边单位向量（v1，v2）构成的法线（T）上。如下图所示。<br>

@@ -8,7 +8,15 @@
 
     <url>
         <loc>/article/algorithm-narrowSingle/</loc>
-        <lastmod>2020-08-30T11:02:01.196Z</lastmod>
+        <lastmod>2020-08-31T01:08:14.893Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>/article/algorithm-narrowAll/</loc>
+        <lastmod>2020-08-31T01:05:46.403Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -17,14 +25,6 @@
     <url>
         <loc>/article/algorithm-polygonIntersection/</loc>
         <lastmod>2020-08-29T09:16:34.720Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>/article/algorithm-narrowAll/</loc>
-        <lastmod>2020-08-28T06:00:58.167Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
