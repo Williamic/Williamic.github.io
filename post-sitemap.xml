@@ -7,16 +7,16 @@
     </url>
 
     <url>
-        <loc>/article/algorithm-narrowAll/</loc>
-        <lastmod>2020-08-31T03:11:36.899Z</lastmod>
+        <loc>/article/algorithm-narrowSingle/</loc>
+        <lastmod>2020-08-31T05:24:32.908Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>/article/algorithm-narrowSingle/</loc>
-        <lastmod>2020-08-31T01:08:14.893Z</lastmod>
+        <loc>/article/algorithm-narrowAll/</loc>
+        <lastmod>2020-08-31T03:11:36.899Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
