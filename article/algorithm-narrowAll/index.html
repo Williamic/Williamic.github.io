@@ -18,7 +18,7 @@
         
     </title>
 
-    <link rel="canonical" href="/article/algorithm-narrowAll/">
+    <link rel="canonical" href="http://williamic.github.io/article/algorithm-narrowAll/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -234,7 +234,7 @@
 <img src="./algorithm-narrowAll_p5.png" alt="外扩内缩上的单位向量"></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">......</span><br><span class="line">Vector2D point = dirLoc1.add(dirLoc2);//目标向量的平行向量</span><br><span class="line">double v = Vector2D.radianBetween(dirLoc1, point);//目标向量与dirLoc1的夹角（弧度）</span><br><span class="line">double v1 = dis / Math.sin(v);</span><br><span class="line">double v2 = point.getLength() / v1;//求出目标向量的缩放比例</span><br><span class="line"></span><br><span class="line">Vector2D divide1 = point.divide(v2);//目标向量</span><br><span class="line">double lat = center.getLatitude() + (divide1.y / 100) * (89.83204953368922 / 1E7);</span><br><span class="line">double lon = center.getLongitude() + (divide1.x / 100) * ((89.83204953368922 / 1E7) / longitude_scale(center.getLatitude()));</span><br><span class="line">LatLong L1 = new LatLong(lat, lon);</span><br><span class="line"></span><br><span class="line">Vector2D divide2 = new Vector2D(-divide1.x, -divide1.y);//目标向量的相反向量</span><br><span class="line">double lat2 = center.getLatitude() + (divide2.y / 100) * (89.83204953368922 / 1E7);</span><br><span class="line">double lon2 = center.getLongitude() + (divide2.x / 100) * ((89.83204953368922 / 1E7) / longitude_scale(center.getLatitude()));</span><br><span class="line">LatLong L2 = new LatLong(lat2, lon2);</span><br><span class="line">......</span><br></pre></td></tr></table></figure>
 <h4 id="4判断目标点位置">4）判断目标点位置</h4>
-<p>   求出两个点之后，根据L1和L2点的位置，判断此时点的位置位于多边形的内还是外，如果此时是内缩，目标点应该位于多边形的内部，反之则为外部。如何判断点在多边形的内外方法可以查看<a href="https://williamic.github.io/article/algorithm-polygonIntersection/#4%E5%B0%84%E7%BA%BF%E7%AE%97%E6%B3%95" target="_blank" rel="noopener">判断两个多边形的位置关系算法</a>。</p>
+<p>   求出两个点之后，根据L1和L2点的位置，判断此时点的位置位于多边形的内还是外，如果此时是内缩，目标点应该位于多边形的内部，反之则为外部。如何判断点在多边形的内外方法可以查看<a href="https://williamic.github.io/article/algorithm-polygonIntersection/#4%E5%B0%84%E7%BA%BF%E7%AE%97%E6%B3%95">判断两个多边形的位置关系算法</a>。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">LatLong L1;</span><br><span class="line">LatLong L2;</span><br><span class="line">if (dis &gt;= 0) &#123;//内缩</span><br><span class="line">    if (isInPolygon(L1, oldLatLongs)) &#123;</span><br><span class="line">        newLatLong = L1;</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">        newLatLong = L2;</span><br><span class="line">    &#125;</span><br><span class="line">&#125; else &#123;//外扩</span><br><span class="line">    if (isInPolygon(L1, oldLatLongs)) &#123;</span><br><span class="line">        newLatLong = L2;</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">        newLatLong = L1;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h3 id="4代码示例">4.代码示例</h3>
 <h4 id="1完整代码">1）完整代码</h4>
@@ -498,7 +498,7 @@
 <script>
     // only load tagcloud.js in tag.html
     if($('#tag_cloud').length !== 0){
-        async("/js/jquery.tagcloud.js",function(){
+        async("http://williamic.github.io/js/jquery.tagcloud.js",function(){
             $.fn.tagcloud.defaults = {
                 //size: {start: 1, end: 1, unit: 'em'},
                 color: {start: '#bbbbee', end: '#0085a1'},

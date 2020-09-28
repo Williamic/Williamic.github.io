@@ -2,98 +2,98 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>/article/algorithm-narrowSingle/</loc>
+    <loc>http://williamic.github.io/article/algorithm-narrowSingle/</loc>
     
     <lastmod>2020-08-31</lastmod>
     
   </url>
   
   <url>
-    <loc>/article/algorithm-narrowAll/</loc>
+    <loc>http://williamic.github.io/article/algorithm-narrowAll/</loc>
     
     <lastmod>2020-08-31</lastmod>
     
   </url>
   
   <url>
-    <loc>/article/algorithm-polygonIntersection/</loc>
+    <loc>http://williamic.github.io/article/algorithm-polygonIntersection/</loc>
     
     <lastmod>2020-08-29</lastmod>
     
   </url>
   
   <url>
-    <loc>/archive/index.html</loc>
+    <loc>http://williamic.github.io/archive/index.html</loc>
     
     <lastmod>2020-08-22</lastmod>
     
   </url>
   
   <url>
-    <loc>/about/index.html</loc>
+    <loc>http://williamic.github.io/about/index.html</loc>
     
     <lastmod>2020-08-22</lastmod>
     
   </url>
   
   <url>
-    <loc>/article/view-RoundCheckBox/</loc>
+    <loc>http://williamic.github.io/article/view-RoundCheckBox/</loc>
     
     <lastmod>2020-07-20</lastmod>
     
   </url>
   
   <url>
-    <loc>/article/jvm-peruse-summary/</loc>
+    <loc>http://williamic.github.io/article/jvm-peruse-summary/</loc>
     
     <lastmod>2020-07-13</lastmod>
     
   </url>
   
   <url>
-    <loc>/article/jvm-peruse-2/</loc>
+    <loc>http://williamic.github.io/article/jvm-peruse-2/</loc>
     
     <lastmod>2020-07-10</lastmod>
     
   </url>
   
   <url>
-    <loc>/article/jvm-peruse-4/</loc>
+    <loc>http://williamic.github.io/article/jvm-peruse-4/</loc>
     
     <lastmod>2020-07-10</lastmod>
     
   </url>
   
   <url>
-    <loc>/article/jvm-peruse-5/</loc>
+    <loc>http://williamic.github.io/article/jvm-peruse-5/</loc>
     
     <lastmod>2020-07-10</lastmod>
     
   </url>
   
   <url>
-    <loc>/article/jvm-peruse-1/</loc>
+    <loc>http://williamic.github.io/article/jvm-peruse-1/</loc>
     
     <lastmod>2020-07-08</lastmod>
     
   </url>
   
   <url>
-    <loc>/article/jvm-peruse-3/</loc>
+    <loc>http://williamic.github.io/article/jvm-peruse-3/</loc>
     
     <lastmod>2020-07-08</lastmod>
     
   </url>
   
   <url>
-    <loc>/tags/index.html</loc>
+    <loc>http://williamic.github.io/tags/index.html</loc>
     
     <lastmod>2020-05-23</lastmod>
     
   </url>
   
   <url>
-    <loc>/404.html</loc>
+    <loc>http://williamic.github.io/404.html</loc>
     
     <lastmod>2020-05-12</lastmod>
     
@@ -101,7 +101,7 @@
   
 
   <url>
-    <loc></loc>
+    <loc>http://williamic.github.io/</loc>
     <lastmod>2020-09-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -109,42 +109,42 @@
 
   
   <url>
-    <loc>/tags/Jvm/</loc>
+    <loc>http://williamic.github.io/tags/Jvm/</loc>
     <lastmod>2020-09-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>/tags/Java/</loc>
+    <loc>http://williamic.github.io/tags/Java/</loc>
     <lastmod>2020-09-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>/tags/Algorithm/</loc>
+    <loc>http://williamic.github.io/tags/Algorithm/</loc>
     <lastmod>2020-09-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>/tags/Computational-Geometry/</loc>
+    <loc>http://williamic.github.io/tags/Computational-Geometry/</loc>
     <lastmod>2020-09-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>/tags/%E8%87%AA%E5%AE%9A%E4%B9%89View/</loc>
+    <loc>http://williamic.github.io/tags/%E8%87%AA%E5%AE%9A%E4%B9%89View/</loc>
     <lastmod>2020-09-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>/tags/Android/</loc>
+    <loc>http://williamic.github.io/tags/Android/</loc>
     <lastmod>2020-09-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
